@@ -1,4 +1,4 @@
-# Arrays
+# Dynamic Programming
 
 ## Overview
 

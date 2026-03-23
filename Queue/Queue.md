@@ -1,4 +1,4 @@
-# Arrays
+# Queue
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# Arrays
+# Stack
 
 ## Overview
 

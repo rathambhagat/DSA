@@ -35,6 +35,7 @@ In algorithm analysis, the focus is often on the auxiliary space because the inp
 
 **Common Space Complexities (Big O Notation)**
 Space complexity helps in comparing different algorithms, especially in memory-constrained environments like mobile devices or embedded systems.
+
 > | O(1) | Constant Space | The memory usage is fixed and does not change with the input size. Examples include swapping two variables or iterative factorial calculation.  |
 > | O(log n) | Logarithmic Space | The memory usage grows logarithmically with the input size. This is common in some recursive algorithms like binary search, due to the call stack depth.  |
 > | O(n) | Linear Space | The memory usage grows linearly with the input size. Examples include storing elements in a standard array or linked list, or the recursion depth in a simple recursive function.  |
@@ -44,4 +45,10 @@ Space complexity helps in comparing different algorithms, especially in memory-c
 Often, there is a trade-off between time complexity (how fast an algorithm runs) and space complexity. An algorithm might use more memory (higher space complexity) to run faster (lower time complexity), or vice versa. 
 
 • Example: Merge Sort has a time complexity of O(n log n) but requires O(n) auxiliary space for temporary arrays. In contrast,  Insertion Sort operates in-place with O(1) auxiliary space, but has a worst-case time complexity of O(n²). 
+
+## Current Repository Progress
+
+- DSA folder structure has been set up topic-wise.
+- A dedicated markdown file now exists in each topic folder for notes and problems.
+- This repository is ready for you to start recording solved problems and learnings.
 

@@ -1,4 +1,4 @@
-# Arrays
+# Sorting & Searching
 
 ## Overview
 

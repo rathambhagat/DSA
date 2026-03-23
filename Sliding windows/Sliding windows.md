@@ -1,4 +1,4 @@
-# Arrays
+# Sliding windows
 
 ## Overview
 

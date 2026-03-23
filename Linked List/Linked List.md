@@ -1,4 +1,4 @@
-# Arrays
+# Linked List
 
 ## Overview
 
