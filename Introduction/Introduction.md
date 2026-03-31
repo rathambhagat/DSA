@@ -45,3 +45,7 @@ Space complexity helps in comparing different algorithms, especially in memory-c
 Often, there is a trade-off between time complexity (how fast an algorithm runs) and space complexity. An algorithm might use more memory (higher space complexity) to run faster (lower time complexity), or vice versa. 
 
 • Example: Merge Sort has a time complexity of O(n log n) but requires O(n) auxiliary space for temporary arrays. In contrast,  Insertion Sort operates in-place with O(1) auxiliary space, but has a worst-case time complexity of O(n²). 
+
+## What is Big O
+Big O notation is a mathematical tool used in computer science to analyze the efficiency of an algorithm, describing how its runtime or space requirements grow as the input size (
+) increases.
