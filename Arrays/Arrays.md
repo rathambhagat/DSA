@@ -62,8 +62,9 @@ This optimized solution uses a **Hash Map** (a Python Dictionary) to act as a "h
 * **Space Complexity: $O(n)$**
   The extra space required depends on the number of items stored in the hash table, which stores at most $n$ elements in the worst-case scenario (e.g., if the matching pair is at the very end of the list).
 
-```
+
 🏃‍♂️ Step-by-Step Logic Flow
+```
 **Example Input:** `nums = [2, 7, 11, 15]`, `target = 9`
 
 1. **Initialization:** We create an empty dictionary `seen = {}`.
@@ -97,6 +98,7 @@ answer = solver.twoSum([2, 7, 11, 15], 9)
 This is a safety net. While most algorithms guarantee a valid answer, if the function is handed a trick question (e.g., `nums = [1, 2, 3]`, `target = 100`), the `for` loop will finish without ever hitting the `return` statement inside the loop. The `return []` ensures the code handles this gracefully by stating, "I checked everything, and no pair exists."
 
 ## Problem 2 - LeetCode217(available in C also)
+
 ### Detail Documentation
 
 📖 The Analogy: The Phone Book vs. The VIP List
@@ -105,6 +107,7 @@ This is a safety net. While most algorithms guarantee a valid answer, if the fun
 Because the "Contains Duplicate" problem only asks *if* a number exists (not *where* it is), the VIP Guest List (Hash Set) is the absolute perfect tool. It saves memory because we don't have to store dummy values.
 
 📝 Algorithm Documentation: Contains Duplicate (Hash Set Solution)
+
 📌 Problem Statement
 Given an integer array `nums`, return `True` if any value appears at least twice in the array, and return `False` if every element is distinct.
 
@@ -170,5 +173,7 @@ Because a Set doesn't have "keys and values" like a Dictionary, you cannot use s
 
 3. Iterating over the array
 When you write `for i in nums:`, Python gives you the *actual value* inside the array, not the index (0, 1, 2). It is highly recommended to name the variable `num` instead of `i` (`for num in nums:`) so you don't accidentally treat it like an index position.
+
+## Problem 
 ## Notes
 --- Adding later ---

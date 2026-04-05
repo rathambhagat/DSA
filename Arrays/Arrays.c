@@ -6,12 +6,13 @@ You can return the answer in any order.
 */
 
 #include <stdlib.h>
-
+#include "uthash.h" // Need to Download this library to make the code working 
 
 // 1. Define what our "dictionary" looks like
 struct hashTable {
     int key;           // The number itself (what we are looking for)
     int value;         // The index of the number
+    UT_hash_handle hh; // The magical uthash tool that makes this work
 };
 
 int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
@@ -51,7 +52,6 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     free(result);
     return NULL;
 }
-
 /*
 
 */
