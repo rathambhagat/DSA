@@ -22,21 +22,19 @@ Update: O(1)
 3) Tree visite nodes
 4) Mathematical
 5) Coding Patterns
-# MultiDimensinal Array
+## MultiDimensinal Array
 Arrays In multiple dimensional: 1D, 2D, 3D
 ## Overview
-
-## Problems
-### Problem 1 - LeetCode1
+---Adding at the end---
+# Problems
+## Problem 1 - LeetCode1
 1. Two Sum - Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
-#### Detail Documentation 
+### Detail Documentation 
 📝 Algorithm Documentation: Two Sum (Hash Map Solution)
-
 📌 Problem Statement
 Given an array of integers `nums` and an integer `target`, return the **indices** of the two numbers that add up to the `target`. 
-
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 💻 The Code
@@ -103,3 +101,4 @@ answer = solver.twoSum([2, 7, 11, 15], 9)
 This is a safety net. While most algorithms guarantee a valid answer, if the function is handed a trick question (e.g., `nums = [1, 2, 3]`, `target = 100`), the `for` loop will finish without ever hitting the `return` statement inside the loop. The `return []` ensures the code handles this gracefully by stating, "I checked everything, and no pair exists."
 
 ## Notes
+--- Adding later ---
