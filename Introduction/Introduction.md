@@ -47,5 +47,30 @@ Often, there is a trade-off between time complexity (how fast an algorithm runs)
 • Example: Merge Sort has a time complexity of O(n log n) but requires O(n) auxiliary space for temporary arrays. In contrast,  Insertion Sort operates in-place with O(1) auxiliary space, but has a worst-case time complexity of O(n²). 
 
 ## What is Big O
-Big O notation is a mathematical tool used in computer science to analyze the efficiency of an algorithm, describing how its runtime or space requirements grow as the input size (
-) increases.
+Big O notation is a mathematical tool used in computer science to analyze the efficiency of an algorithm, describing how its runtime or space requirements grow as the input size() increases.
+
+# Data Structures
+
+| Category | Data Structures |
+|---|---|
+| Linear | Array, Linked List, Stack, Queue |
+| Non-Linear | Graph, Tree |
+| Hash Based | Hash Map, HashSet |
+
+## Definitions
+
+**Category Definitions**
+*Linear:* Data elements are arranged in a sequence, and each element (except ends) has a single predecessor and successor.
+*Non-Linear:* Data elements are connected in hierarchical or network relationships instead of a single sequential path.
+*Hash Based:* Data is organized using a hash function that maps keys to storage locations for fast average-case access.
+
+**Data Structure Definitions**
+*Array:* A fixed-size, contiguous collection of elements of the same type, accessed by index.
+*Linked List:* A sequence of nodes where each node stores data and a reference to the next node (and sometimes previous).
+*Stack:* A linear structure that follows Last In, First Out (LIFO), with operations at one end (top).
+*Queue:* A linear structure that follows First In, First Out (FIFO), with insertion at rear and removal at front.
+*Graph:* A set of vertices (nodes) connected by edges, used to model pairwise relationships.
+*Tree:* A hierarchical, acyclic structure of nodes with a single root and parent-child relationships.
+*Hash Map:* A key-value data structure that uses hashing to provide fast average-case lookup, insertion, and deletion by key.
+*HashSet:* A collection of unique elements implemented with hashing, providing fast average-case membership checks.
+
