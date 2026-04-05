@@ -22,6 +22,8 @@ Update: O(1)
 3) Tree visite nodes
 4) Mathematical
 5) Coding Patterns
+# MultiDimensinal Array
+Arrays In multiple dimensional: 1D, 2D, 3D
 ## Overview
 
 ## Problems
