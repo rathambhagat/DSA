@@ -64,7 +64,7 @@ This optimized solution uses a **Hash Map** (a Python Dictionary) to act as a "h
 * **Space Complexity: $O(n)$**
   The extra space required depends on the number of items stored in the hash table, which stores at most $n$ elements in the worst-case scenario (e.g., if the matching pair is at the very end of the list).
 
----
+```
 🏃‍♂️ Step-by-Step Logic Flow
 **Example Input:** `nums = [2, 7, 11, 15]`, `target = 9`
 
@@ -79,7 +79,7 @@ This optimized solution uses a **Hash Map** (a Python Dictionary) to act as a "h
    * Is `2` in `seen`? **Yes!**
    * Emergency exit activated: `return [seen[2], i]`.
    * **Result:** `[0, 1]`
----
+```
 
 🤔 Common Pitfalls & Doubts Clarified
 *These are specific conceptual hurdles I overcame while learning this algorithm.*
