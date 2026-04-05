@@ -174,6 +174,7 @@ Because a Set doesn't have "keys and values" like a Dictionary, you cannot use s
 3. Iterating over the array
 When you write `for i in nums:`, Python gives you the *actual value* inside the array, not the index (0, 1, 2). It is highly recommended to name the variable `num` instead of `i` (`for num in nums:`) so you don't accidentally treat it like an index position.
 
-## Problem 
+## Problem 3 - LeetCode219(available in C also)
+
 ## Notes
 --- Adding later ---

@@ -52,6 +52,45 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     free(result);
     return NULL;
 }
-/*
 
+/*
+217. Contains Duplicate
+Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 */
+#include <stdbool.h> // C needs this to understand 'true' and 'false'
+#include <stdlib.h>
+#include "uthash.h"  // Don't forget your local file!
+
+// 1. Define our "VIP List" Set
+struct hashSet {
+    int key;              // The number itself
+    UT_hash_handle hh;    // 🚨 MANDATORY: The magic handle you fixed earlier!
+    // Notice: NO 'value' integer here! We don't need it.
+};
+
+bool containsDuplicate(int* nums, int numsSize) {
+    struct hashSet *seen = NULL; // Initialize empty VIP list
+    struct hashSet *entry;       // Temporary variable
+    
+    for (int i = 0; i < numsSize; i++) {
+        // 2. CHECK THE VIP LIST: "if num in seen:"
+        HASH_FIND_INT(seen, &nums[i], entry);
+        
+        if (entry != NULL) {
+            // WE FOUND A DUPLICATE! EMERGENCY EXIT!
+            
+            // Note: To be a good C citizen, we should write a loop to free() 
+            // all the memory in 'seen' before returning, but LeetCode 
+            // will accept this exact code for speed.
+            return true; 
+        }
+        
+        // 3. NOT FOUND, ADD TO VIP LIST: "seen.add(num)"
+        entry = (struct hashSet*)malloc(sizeof(struct hashSet));
+        entry->key = nums[i];
+        HASH_ADD_INT(seen, key, entry);
+    }
+    
+    // 4. SAFETY NET: Checked everything, no duplicates
+    return false;
+}
